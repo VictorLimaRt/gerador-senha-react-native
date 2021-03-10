@@ -4,7 +4,7 @@ import { StyleSheet, Image, Text, View, TouchableOpacity } from 'react-native';
 import Slider from '@react-native-community/slider';
 import Clipboard from 'expo-clipboard';
 
-let charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+let charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789<=>?@[\]^_`{|}~';
 
 
 export default function App() {
@@ -41,7 +41,7 @@ export default function App() {
       <Slider
           style={{ height: 50}}
           minimumValue={5}
-          maximumValue={15}
+          maximumValue={20}
           minimumTrackTintColor="#FF0000"
           thumbTintColor="#6f59ff"
           maximumTrackTintColor="#808080"
